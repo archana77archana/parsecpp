@@ -2,4 +2,9 @@
 
 Using a `.c` file, we parse a `.cpp` file and extract the student detail information from it which are the object initializations in the `.cpp` file to create a `.html` file and a student details table in it. You can sort the table by department names.
 
+## References
+
+* [An example of using regular expressions in C](https://www.lemoda.net/c/unix-regex/)
+* [How TO - Sort a Table](https://www.w3schools.com/howto/howto_js_sort_table.asp)
+
 
