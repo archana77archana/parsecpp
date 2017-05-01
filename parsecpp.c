@@ -135,12 +135,12 @@ int main (int argc, char **argv)
     fprintf(html_file, "<!DOCTYPE html><html><head><style>table, th, td {"
                         "border: 1px solid black;"
                         "border-collapse: collapse;}th, td {padding: 5px;}th {text-align: left;}</style></head><body>");
-    // button to sort
-    fprintf(html_file, "<p><button onclick=\"sortTable()\">Sort alphabetically</button></p>");
     // to search
     fprintf(html_file, "<input type=\"text\" id=\"myInput\" onkeyup=\"filter()\" style=\"padding:10px; margin-bottom:10px;\" placeholder=\"Filter by Department\">");
-    fprintf(html_file, "<table id=\"student_details\" style=\"text-align:center; border: 1px solid\"><th>Department&nbsp;&nbsp;</th>"
-		"<th>Register Number&nbsp;&nbsp;</th><th>Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th><th>SSLC Marks&nbsp;&nbsp;&nbsp;&nbsp;</th><th>HSc" "Marks&nbsp;&nbsp;&nbsp;&nbsp;</th><th>UG-Marks&nbsp;&nbsp;</th><th>PG-Marks&nbsp;&nbsp;</th>");
+    fprintf(html_file, "<table id=\"student_details\" style=\"text-align:center; border: 1px solid\"><th onclick=\"sortTable(0)\">Department&nbsp;&nbsp;</th>"
+		"<th onclick=\"sortTable(1)\">Register Number&nbsp;&nbsp;</th><th onclick=\"sortTable(2)\">Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>"
+                "<th onclick=\"sortTable(3)\">SSLC Marks&nbsp;&nbsp;&nbsp;&nbsp;</th><th onclick=\"sortTable(4)\">HSc Marks&nbsp;&nbsp;&nbsp;&nbsp;</th>"
+                "<th onclick=\"sortTable(4)\">UG-Marks&nbsp;&nbsp;</th><th onclick=\"sortTable(5)\">PG-Marks&nbsp;&nbsp;</th>");
 
     compile_regex (& r, regex_text);
     match_regex (& r, file_contents, html_file);
