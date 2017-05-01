@@ -14,5 +14,6 @@ Using a `.c` file, we parse a `.cpp` file and extract the student detail informa
 
 * [An example of using regular expressions in C](https://www.lemoda.net/c/unix-regex/)
 * [How TO - Sort a Table](https://www.w3schools.com/howto/howto_js_sort_table.asp)
+* [How TO - Filter/Search Table](https://www.w3schools.com/howto/howto_js_filter_table.asp)
 
 
